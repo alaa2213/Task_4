@@ -24,9 +24,9 @@ npm install
 
 # 2) Run
 # Terminal A (Backend)
-cd server && npm run dev
+cd server && npm run test
 # Terminal B (Frontend)
-cd client && npm run dev
+cd client && npm run test
 ```
 
 - Backend runs at `http://localhost:4000`
@@ -63,12 +63,5 @@ mongodb://karimahmedx12345_db_user:3j4pXtepJOOqUwdH@ac-8s5sv3m-shard-00-00.sytuj
  ```    
 
  # TODO:
-- Go to `All Perks` tab after starting the project
-- Implement the search and filtering functionalities in the `AllPerks.jsx` file 
-- Initially, the page should load all available perks
-- The page should look like this:
-- ![How it should look like](screenshots/screenshot.png)
-- Test it on the frontend
-- Push it on Github (check the manual if you struggle)
-- Show your TA for grading
+
 
