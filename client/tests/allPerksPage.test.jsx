@@ -68,8 +68,10 @@ describe('AllPerks page (Directory)', () => {
     fireEvent.change(merchantFilter, { target: { value: seededPerk.merchant } });
 
     // Wait for the loading state to disappear (filtered results loaded)
+       await waitFor(() => {
+      expect(screen.getByText(seededPerk.title)).toBeInTheDocument();
+    });
 
-  await screen.findByText(seededPerk.title);
     // Verify the summary reflects filtered results (should be at least 1)
     expect(screen.getByText(/showing/i)).toBeInTheDocument();
   });
